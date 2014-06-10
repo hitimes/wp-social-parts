@@ -23,6 +23,5 @@ function add_fb_open_graph_tags() {
 <meta property="og:url" content="<?php the_permalink(); ?>" />
 <meta property="og:description" content="<?php echo $description ?>" />
 <meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>" />
-
 <?php   }
 }

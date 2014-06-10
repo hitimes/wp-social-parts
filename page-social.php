@@ -7,8 +7,6 @@
 <div class="social__buttons">
     <ul>
         <li class="facebook">
-            <!-- Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header: 
-            https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
             <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="popup">
                 <span class="text">facebook</span>
             </a>
@@ -29,7 +27,6 @@
             </a>
         </li>
         <li class="googleplus">
-            <!-- Replace href with your meta and URL information.  -->
             <a href="https://plus.google.com/share?url=<?php the_title(); the_permalink(); ?>" class="popup">
                 <span class="text">google+</span>
             </a>
