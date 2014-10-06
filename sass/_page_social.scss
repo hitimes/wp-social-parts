@@ -2,102 +2,97 @@
     ::Social Styling
 \*------------------------------------*/
 .social__buttons{
-	@include col(12);
+	//Uncomment below if using foundation
+	// @include col(12);
+	//Uncomment above if using foundation
+	//Delete below if using foundation
+	width: 100%;
+	//Delete above if using foundation
 	ul {
 		list-style: none;
 		padding: {left:0;}
 	}
 	li{
-		@include col(2, $collapse: true);
+		//Uncomment below if using foundation
+		// @include col(2, $collapse: true);
+		//Uncomment above if using foundation
 		float: left;
+		//Delete below if using foundation
+		width: 16.6666667%;
+		//Delete above if using foundation
+	}
+	svg{
+		float: left;
+		max-width: 20px;
+		max-height: 20px;
+		margin-right: 10px;
+		fill: #fff;
 	}
 	a{
 		display: block;
 		width: 100%;
-		padding: {top:10px;right:10px;bottom:10px;left:25px;}
-		color: $color-3-lightest;
-		text:{
-			align: center;
-			decoration: none;
-		}
+		padding: 10px
+		color: #fefefe;
+		text-decoration: none;
 		transition: box-shadow 400ms;
 		&:hover{
 			box-shadow: 0 0 15px rgba(47,47,47,0.2) inset;
 		}
-		&:before{
-			display: block;
-			height: 100%;
-			left: 10px;
-			padding-top: 7px;
-			position: absolute;
-			top: 8px;
-			font: {
-				size: 1.25em;
-			}
-		}
 	}
 	.facebook{
 		background: #3b5998;
-		a{
-			&:before{
-				@extend .icon;
-				@extend .icon--facebook;
-			}
-		}
 	}
 	.linkedin{
 		background: #007bb6;
-		a{
-			&:before{
-				@extend .icon;
-				@extend .icon--linkedin;
-			}
-		}
 	}
 	.twitter{
 		background: #00aced;
-		a{
-			&:before{
-				@extend .icon;
-				@extend .icon--twitter;
-			}
-		}
 	}
 	.reddit{
 		background: #9ab6d2;
-		a{
-			&:before{
-				@extend .icon;
-				@extend .icon--reddit;
-			}
-		}
 	}
 	.googleplus{
 		background: #dd4b39;
-		a{
-			&:before{
-				@extend .icon;
-				@extend .icon--google-plus;
-			}
-		}
 	}
 	.pinterest{
 		background: #cb2027;
-		a{
-			&:before{
-				@extend .icon;
-				@extend .icon--pinterest;
-			}
+	}
+//Uncomment below if using zemplate
+// 	@include bp($solarsystem) {
+//     a {
+//  	   	width: auto;
+//    		text-indent: -999em;
+//    		text-align: center;
+//    	}
+// 		span{
+// 			position: absolute;
+// 			top:-999em;
+// 			left: -999em;
+// 		}
+//    	svg{
+//    		float: none;
+//    		display: block;
+//    		margin: 0 auto;
+//    	}
+//	}
+//Uncomment above if using zemplate
+//Delete below if using zemplate
+	@media (max-width: 1024px){
+		a {
+	 	   	width: auto;
+	   		text-indent: -999em;
+	   		text-align: center;
+	   	}
+		span{
+			position: absolute;
+			top:-999em;
+			left: -999em;
 		}
-	}
-	@include bp($solarsystem) {
-	    a {
-    		text-indent: -999em;
-    		&:before{
-    			width: 100%;
-    			left: 0;
-    			text-indent: 0;
-    		}
-    	}
-	}
+	   	svg{
+	   		float: none;
+	   		display: block;
+	   		margin: 0 auto;
+	   	}
+   	}
+//Delete above  if using zemplate
 }
