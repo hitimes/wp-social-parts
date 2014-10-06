@@ -9,4 +9,4 @@ This little plugin has some extras that work great with [zemplate](https://githu
 
 Future Items
 ------------
-~- Use flat SVG's in place of icon fonts.~
+- ~Use flat SVG's in place of icon fonts.~
