@@ -9,4 +9,4 @@ In addition the SASS utilizes icon fonts complied by [grunt-webfont](https://git
 
 Future Items
 ------------
-- Use flat SVG's in place of icon fonts.
+~- Use flat SVG's in place of icon fonts.~
