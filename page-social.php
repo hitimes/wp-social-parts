@@ -10,7 +10,7 @@
       include_once($svgpath); ?>
 </div>
 
-<div class="social__buttons">
+<div class="social">
     <ul>
         <li class="facebook">
             <a href="https://www.facebook.com/sharer/sharer.php?u=<?php //the_permalink(); ?>" class="popup">
